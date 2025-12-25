@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-container .logo{
+    width: 60px;
+    height: 60px;
+}
+
+.tech img{
+    
+    
+    width: 45px;
+}
+
+html{
+    margin: 20px;
+}
+
+
+
+/* navbar is being styled */
+.navbar {
+    height: 100px;
+    width: 100vw;
+    display: flex;  
+    
+    padding: 30px 20px;
+    align-items: center;
+    background-color: rgb(15, 63, 93);
+    color: whitesmoke;
+    justify-content: center;
+    padding-right: 5%;
+    
+}
+
+
+.tech-nav-container{
+    
+  
+   margin-left: auto;
+   display: flex;
+   flex-direction: row;
+}
+
+.tech-nav-container img {
+ width: 40px;
+ margin:5px;
+  justify-content: center;
+ height: 80%;
+ align-items: center;
+ 
+}
+
+.pages-containter{
+ display: flex;
+ margin: 20px;
+ justify-content: center;
+ height: 100%;
+ align-items: center;
+ 
+}
+
+.pages-containter .page a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 25px;
+
+}
+
+.profile-owner{
+    margin: 20px;
+}
+
+.profile-owner p{
+     font-family: "Inter", sans-serif;
+    font-size: 40px;
+}
+
+.logo-container .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding:5px;
+     font-family: "Inter", sans-serif;
+    border: 5px solid white;
+}
+
+.hamburger-menu{
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* hidden for all  - hidden hamburder menu and the dropdown after the hamburger button is pressed is hidden*/
+
+.hidden{
+    display:none;
+}
+
+
+@media(max-width: 1500px){
+    .profile-owner{
+        display: none;
+    }
+
+}
+@media(max-width: 500px){
+    .page-nav-container{
+        display: none;
+    }
+    .hamburger-link-container{
+        display:block;
+    }
+
+    /* hamburger menu wrapper */
+.hamburger-link-container {
+  display: flex;
+  justify-content:left;
+  width: 100%;
+  background-color: rgb(180, 180, 177);
+  
+}
+
+/* list container */
+.page-link-list {
+  display: flex;
+  flex-direction: column;
+  width: 180px; /* fixed width is better than vw */
+  padding: 0;
+  margin: 0;
+}
+
+/* list items */
+.page {
+  list-style: none;
+}
+
+/* links */
+.page-link {
+  display: flex;                 /* flex used here */
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-bottom: 2px solid rgb(6, 28, 75);
+  background-color: rgb(15, 63, 93);
+  color: whitesmoke;
+  font-size: 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.page-link:hover {
+  background-color: rgb(6, 28, 75);
+}
+
+.hamburger-menu{
+    display:block;
+    margin-left: 10px;
+}
+
+
+}
+
